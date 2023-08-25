@@ -1,23 +1,38 @@
 {
-  "name": "proyecto",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "company-products-api",
+  "version": "0.0.2",
+  "description": "A Company REST API with authentication and authorization",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "jest"
   },
-  "author": "PW62",
-  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FaztWeb/company-products-api.git"
+  },
+  "keywords": [],
+  "author": "Fazt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FaztWeb/company-products-api/issues"
+  },
+  "homepage": "https://github.com/FaztWeb/company-products-api#readme",
+  "devDependencies": {
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "supertest": "^6.2.4"
+  },
   "dependencies": {
-    "babel": "^6.23.0",
-    "express": "^4.18.2",
-    "helmet": "^7.0.0",
-    "http": "^0.0.1-security",
-    "jwtoken": "^0.0.0",
-    "mongoose": "^7.4.4",
-    "morgan": "^1.10.0",
-    "nodemon": "^3.0.1"
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "helmet": "^5.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.0",
+    "morgan": "^1.10.0"
   }
 }
